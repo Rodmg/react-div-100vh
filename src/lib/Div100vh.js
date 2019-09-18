@@ -14,13 +14,23 @@ export default class Div100vh extends React.Component {
     this.setState({ style: convertedStyle });
   };
 
+  onResize = () => {
+    setTimeout(() => {
+      this.updateStyle();
+    }, 200);
+
+    setTimeout(() => {
+      this.updateStyle();
+    }, 1000);
+  };
+
   componentDidMount() {
     this.updateStyle();
-    window.addEventListener('resize', this.updateStyle);
+    window.addEventListener('resize', this.onResize);
   }
 
   componentWillUnmount() {
-    window.removeEventListener('resize', this.updateStyle);
+    window.removeEventListener('resize', this.onResize);
   }
 
   render() {
