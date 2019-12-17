@@ -1,5 +1,5 @@
 {
-  "name": "react-div-100vh",
+  "name": "@rodmg/react-div-100vh",
   "version": "0.3.5",
   "description": "A React component that aims to solve '100vh' issue in mobile browsers",
   "main": "lib/index.js",
@@ -58,6 +58,13 @@
   "homepage": "https://github.com/mvasin/react-div-100vh",
   "repository": {
     "type": "git",
-    "url": "git@github.com:mvasin/react-div-100vh.git"
-  }
+    "url": "git+ssh://git@github.com/mvasin/react-div-100vh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mvasin/react-div-100vh/issues"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {}
 }
